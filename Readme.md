@@ -8,12 +8,20 @@ Dalam kerangka **Smart City (Smart Environment)**, pengelolaan data sampah yang 
 * **Durasi Operasional:** Loyalitas dan keberlanjutan program (dalam tahun).
 * **Aktualitas Data:** Tahun terakhir aktivitas tercatat.
 
+## 📂 Data Source
+Data yang digunakan dalam proyek ini bersumber dari **Open Data Kota Bandung**, dengan rincian sebagai berikut:
+* **Dataset:** Bank Sampah Berdasarkan Kelurahan di Kecamatan Cibeunying Kidul Kota Bandung.
+* **Format:** CSV / API.
+* **Rentang Waktu:** Hingga tahun 2025 (Dataset terbaru).
+* **Penyedia Data:** Dinas Lingkungan Hidup (DLH) Kota Bandung / Diskominfo.
+* **URL:** [Link ke dataset asli jika ada, contoh: https://opendata.bandung.go.id/]
+
 ## 🛠️ Metodologi (CRISP-DM)
 Proyek ini mengikuti standar industri **CRISP-DM**:
 1.  **Business Understanding:** Mengidentifikasi kebutuhan pemetaan wilayah untuk intervensi kebijakan lingkungan.
 2.  **Data Preparation:** Agregasi data mentah (281 baris) menjadi fitur numerik berbasis kelurahan (6 baris).
 3.  **Modeling:** Implementasi K-Means dengan evaluasi *Elbow Method* untuk menentukan jumlah klaster optimal ($k=3$).
-4.  **Evaluation:** Validasi model menggunakan *Silhouette Score* (Skor: **0.5475**), yang menunjukkan struktur klaster yang kuat.
+4.  **Evaluation:** Validasi model menggunakan *Silhouette Score* (Skor: **0.6743**), yang menunjukkan struktur klaster yang kuat.
 
 ## 📊 Hasil Analisis (Profiling Klaster)
 Berdasarkan visualisasi 3D, wilayah dikategorikan menjadi:
